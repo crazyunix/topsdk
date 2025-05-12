@@ -3,10 +3,11 @@ package ability374
 import (
 	"errors"
 	"log"
-	"topsdk"
-	"topsdk/ability374/request"
-	"topsdk/ability374/response"
-	"topsdk/util"
+
+	"github.com/crazyunix/topsdk"
+	"github.com/crazyunix/topsdk/ability374/request"
+	"github.com/crazyunix/topsdk/ability374/response"
+	"github.com/crazyunix/topsdk/util"
 )
 
 type Ability374 struct {

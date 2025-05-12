@@ -1,7 +1,7 @@
 package response
 
 import (
-	"topsdk/defaultability/domain"
+	"github.com/crazyunix/topsdk/defaultability/domain"
 )
 
 type TaobaoTbkOptimusTouMaterialIdsGetResponse struct {

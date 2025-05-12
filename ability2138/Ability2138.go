@@ -3,10 +3,11 @@ package ability2138
 import (
 	"errors"
 	"log"
-	"topsdk"
-	"topsdk/ability2138/request"
-	"topsdk/ability2138/response"
-	"topsdk/util"
+
+	"github.com/crazyunix/topsdk"
+	"github.com/crazyunix/topsdk/ability2138/request"
+	"github.com/crazyunix/topsdk/ability2138/response"
+	"github.com/crazyunix/topsdk/util"
 )
 
 type Ability2138 struct {

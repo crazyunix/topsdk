@@ -11,7 +11,8 @@ import (
 	"net/url"
 	"strings"
 	"time"
-	"topsdk/util"
+
+	"github.com/crazyunix/topsdk/util"
 )
 
 type TopClient struct {

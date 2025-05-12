@@ -1,8 +1,8 @@
 package request
 
 import (
-	"topsdk/ability3197/domain"
-	"topsdk/util"
+	"github.com/crazyunix/topsdk/ability3197/domain"
+	"github.com/crazyunix/topsdk/util"
 )
 
 type TaobaoTbkRtaConsumerMatchRequest struct {

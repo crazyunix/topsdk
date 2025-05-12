@@ -1,8 +1,8 @@
 package request
 
 import (
-	"topsdk/defaultability/domain"
-	"topsdk/util"
+	"github.com/crazyunix/topsdk/defaultability/domain"
+	"github.com/crazyunix/topsdk/util"
 )
 
 type TaobaoTbkDgMaterialOptionalUpgradeRequest struct {

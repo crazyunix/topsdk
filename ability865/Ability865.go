@@ -3,10 +3,11 @@ package ability865
 import (
 	"errors"
 	"log"
-	"topsdk"
-	"topsdk/ability865/request"
-	"topsdk/ability865/response"
-	"topsdk/util"
+
+	"github.com/crazyunix/topsdk"
+	"github.com/crazyunix/topsdk/ability865/request"
+	"github.com/crazyunix/topsdk/ability865/response"
+	"github.com/crazyunix/topsdk/util"
 )
 
 type Ability865 struct {

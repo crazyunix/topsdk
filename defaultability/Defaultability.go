@@ -3,10 +3,11 @@ package defaultability
 import (
 	"errors"
 	"log"
-	"topsdk"
-	"topsdk/defaultability/request"
-	"topsdk/defaultability/response"
-	"topsdk/util"
+
+	"github.com/crazyunix/topsdk"
+	"github.com/crazyunix/topsdk/defaultability/request"
+	"github.com/crazyunix/topsdk/defaultability/response"
+	"github.com/crazyunix/topsdk/util"
 )
 
 type Defaultability struct {

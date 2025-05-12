@@ -1,7 +1,7 @@
 package domain
 
 import (
-	"topsdk/util"
+	"github.com/crazyunix/topsdk/util"
 )
 
 type TaobaoTbkDgCpaActivityDetailPageResult struct {

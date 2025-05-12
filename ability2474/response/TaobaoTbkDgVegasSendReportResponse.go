@@ -1,7 +1,7 @@
 package response
 
 import (
-	"topsdk/ability2474/domain"
+	"github.com/crazyunix/topsdk/ability2474/domain"
 )
 
 type TaobaoTbkDgVegasSendReportResponse struct {

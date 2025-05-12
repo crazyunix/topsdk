@@ -1,7 +1,7 @@
 package request
 
 import (
-	"topsdk/util"
+	"github.com/crazyunix/topsdk/util"
 )
 
 type TaobaoTbkDgCpaActivityDetailRequest struct {
