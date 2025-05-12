@@ -1,3 +1,3 @@
-module github.com/crazyunix/topsdk-go
+module github.com/crazyunix/topsdk
 
 go 1.16
