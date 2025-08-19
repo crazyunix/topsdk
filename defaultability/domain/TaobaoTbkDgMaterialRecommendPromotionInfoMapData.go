@@ -44,6 +44,10 @@ type TaobaoTbkDgMaterialRecommendPromotionInfoMapData struct {
 	/*
 	   预估凑单优惠路径     */
 	PredictRoundingUpPathList *[]TaobaoTbkDgMaterialRecommendPredictRoundingUpPathMapData `json:"predict_rounding_up_path_list,omitempty" `
+
+	/*
+	   国家补贴     */
+	GovSubsidy *TaobaoTbkDgMaterialRecommendGovSubsidyDTO `json:"gov_subsidy,omitempty" `
 }
 
 func (s *TaobaoTbkDgMaterialRecommendPromotionInfoMapData) SetReservePrice(v string) *TaobaoTbkDgMaterialRecommendPromotionInfoMapData {
@@ -88,5 +92,9 @@ func (s *TaobaoTbkDgMaterialRecommendPromotionInfoMapData) SetMorePromotionList(
 }
 func (s *TaobaoTbkDgMaterialRecommendPromotionInfoMapData) SetPredictRoundingUpPathList(v []TaobaoTbkDgMaterialRecommendPredictRoundingUpPathMapData) *TaobaoTbkDgMaterialRecommendPromotionInfoMapData {
 	s.PredictRoundingUpPathList = &v
+	return s
+}
+func (s *TaobaoTbkDgMaterialRecommendPromotionInfoMapData) SetGovSubsidy(v TaobaoTbkDgMaterialRecommendGovSubsidyDTO) *TaobaoTbkDgMaterialRecommendPromotionInfoMapData {
+	s.GovSubsidy = &v
 	return s
 }

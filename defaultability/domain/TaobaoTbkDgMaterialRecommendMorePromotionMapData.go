@@ -20,6 +20,14 @@ type TaobaoTbkDgMaterialRecommendMorePromotionMapData struct {
 	/*
 	   优惠ID     */
 	PromotionId *string `json:"promotion_id,omitempty" `
+
+	/*
+	   当天优惠总库存【指定优惠透出，不对外开放】     */
+	PromotionTotalCount *int64 `json:"promotion_total_count,omitempty" `
+
+	/*
+	   优惠使用路径【指定优惠透出，不对外开放】     */
+	PromotionUrl *string `json:"promotion_url,omitempty" `
 }
 
 func (s *TaobaoTbkDgMaterialRecommendMorePromotionMapData) SetPromotionTitle(v string) *TaobaoTbkDgMaterialRecommendMorePromotionMapData {
@@ -40,5 +48,13 @@ func (s *TaobaoTbkDgMaterialRecommendMorePromotionMapData) SetPromotionEndTime(v
 }
 func (s *TaobaoTbkDgMaterialRecommendMorePromotionMapData) SetPromotionId(v string) *TaobaoTbkDgMaterialRecommendMorePromotionMapData {
 	s.PromotionId = &v
+	return s
+}
+func (s *TaobaoTbkDgMaterialRecommendMorePromotionMapData) SetPromotionTotalCount(v int64) *TaobaoTbkDgMaterialRecommendMorePromotionMapData {
+	s.PromotionTotalCount = &v
+	return s
+}
+func (s *TaobaoTbkDgMaterialRecommendMorePromotionMapData) SetPromotionUrl(v string) *TaobaoTbkDgMaterialRecommendMorePromotionMapData {
+	s.PromotionUrl = &v
 	return s
 }

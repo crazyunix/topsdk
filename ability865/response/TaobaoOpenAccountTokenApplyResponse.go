@@ -1,7 +1,7 @@
 package response
 
 import (
-	"topsdk/ability865/domain"
+	"github.com/crazyunix/topsdk/ability865/domain"
 )
 
 type TaobaoOpenAccountTokenApplyResponse struct {

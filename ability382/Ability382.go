@@ -3,10 +3,12 @@ package ability382
 import (
 	"errors"
 	"log"
-	"topsdk"
-	"topsdk/ability382/request"
-	"topsdk/ability382/response"
-	"topsdk/util"
+
+	"github.com/crazyunix/topsdk"
+
+	"github.com/crazyunix/topsdk/ability382/request"
+	"github.com/crazyunix/topsdk/ability382/response"
+	util "github.com/crazyunix/topsdk/util"
 )
 
 type Ability382 struct {

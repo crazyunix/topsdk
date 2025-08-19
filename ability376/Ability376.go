@@ -3,10 +3,12 @@ package ability376
 import (
 	"errors"
 	"log"
-	"topsdk"
-	"topsdk/ability376/request"
-	"topsdk/ability376/response"
-	"topsdk/util"
+
+	"github.com/crazyunix/topsdk"
+
+	"github.com/crazyunix/topsdk/ability376/request"
+	"github.com/crazyunix/topsdk/ability376/response"
+	util "github.com/crazyunix/topsdk/util"
 )
 
 type Ability376 struct {

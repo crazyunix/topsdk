@@ -20,6 +20,18 @@ type TaobaoTbkItemInfoUpgradeGetPublishInfo struct {
 	/*
 	   当天推广销量。 非实时，约1小时更新     */
 	DailyPromotionSales *int64 `json:"daily_promotion_sales,omitempty" `
+
+	/*
+	   额外奖励活动类型，如果一个商品有多个奖励类型，返回结果使用空格分割，0=预售单单奖励，1=618超级U选单单补     */
+	CpaRewardType *string `json:"cpa_reward_type,omitempty" `
+
+	/*
+	   额外奖励活动金额，活动奖励金额的类型与cpa_reward_type字段对应，如果一个商品有多个奖励类型，返回结果使用空格分割     */
+	CpaRewardAmount *string `json:"cpa_reward_amount,omitempty" `
+
+	/*
+	   商品佣金信息     */
+	IncomeInfo *TaobaoTbkItemInfoUpgradeGetFinalIncomeInfo `json:"income_info,omitempty" `
 }
 
 func (s *TaobaoTbkItemInfoUpgradeGetPublishInfo) SetIncomeRate(v string) *TaobaoTbkItemInfoUpgradeGetPublishInfo {
@@ -40,5 +52,17 @@ func (s *TaobaoTbkItemInfoUpgradeGetPublishInfo) SetTwoHourPromotionSales(v int6
 }
 func (s *TaobaoTbkItemInfoUpgradeGetPublishInfo) SetDailyPromotionSales(v int64) *TaobaoTbkItemInfoUpgradeGetPublishInfo {
 	s.DailyPromotionSales = &v
+	return s
+}
+func (s *TaobaoTbkItemInfoUpgradeGetPublishInfo) SetCpaRewardType(v string) *TaobaoTbkItemInfoUpgradeGetPublishInfo {
+	s.CpaRewardType = &v
+	return s
+}
+func (s *TaobaoTbkItemInfoUpgradeGetPublishInfo) SetCpaRewardAmount(v string) *TaobaoTbkItemInfoUpgradeGetPublishInfo {
+	s.CpaRewardAmount = &v
+	return s
+}
+func (s *TaobaoTbkItemInfoUpgradeGetPublishInfo) SetIncomeInfo(v TaobaoTbkItemInfoUpgradeGetFinalIncomeInfo) *TaobaoTbkItemInfoUpgradeGetPublishInfo {
+	s.IncomeInfo = &v
 	return s
 }

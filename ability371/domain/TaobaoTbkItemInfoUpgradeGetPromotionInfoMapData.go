@@ -36,6 +36,10 @@ type TaobaoTbkItemInfoUpgradeGetPromotionInfoMapData struct {
 	/*
 	   货品展示标识列表     */
 	ActivityTagList *[]TaobaoTbkItemInfoUpgradeGetActivityTagMapData `json:"activity_tag_list,omitempty" `
+
+	/*
+	   国家补贴     */
+	GovSubsidy *TaobaoTbkItemInfoUpgradeGetGovSubsidyDTO `json:"gov_subsidy,omitempty" `
 }
 
 func (s *TaobaoTbkItemInfoUpgradeGetPromotionInfoMapData) SetReservePrice(v string) *TaobaoTbkItemInfoUpgradeGetPromotionInfoMapData {
@@ -72,5 +76,9 @@ func (s *TaobaoTbkItemInfoUpgradeGetPromotionInfoMapData) SetMorePromotionList(v
 }
 func (s *TaobaoTbkItemInfoUpgradeGetPromotionInfoMapData) SetActivityTagList(v []TaobaoTbkItemInfoUpgradeGetActivityTagMapData) *TaobaoTbkItemInfoUpgradeGetPromotionInfoMapData {
 	s.ActivityTagList = &v
+	return s
+}
+func (s *TaobaoTbkItemInfoUpgradeGetPromotionInfoMapData) SetGovSubsidy(v TaobaoTbkItemInfoUpgradeGetGovSubsidyDTO) *TaobaoTbkItemInfoUpgradeGetPromotionInfoMapData {
+	s.GovSubsidy = &v
 	return s
 }

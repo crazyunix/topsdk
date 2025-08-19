@@ -1,7 +1,7 @@
 package domain
 
 import (
-	"topsdk/util"
+	util "github.com/crazyunix/topsdk/util"
 )
 
 type TaobaoTbkDgNewuserOrderGetMapData struct {

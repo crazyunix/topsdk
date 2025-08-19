@@ -3,10 +3,12 @@ package ability3197
 import (
 	"errors"
 	"log"
-	"topsdk"
-	"topsdk/ability3197/request"
-	"topsdk/ability3197/response"
-	"topsdk/util"
+
+	"github.com/crazyunix/topsdk"
+
+	"github.com/crazyunix/topsdk/ability3197/request"
+	"github.com/crazyunix/topsdk/ability3197/response"
+	util "github.com/crazyunix/topsdk/util"
 )
 
 type Ability3197 struct {

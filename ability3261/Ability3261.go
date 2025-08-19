@@ -3,10 +3,11 @@ package ability3261
 import (
 	"errors"
 	"log"
-	"topsdk"
-	"topsdk/ability3261/request"
-	"topsdk/ability3261/response"
-	"topsdk/util"
+
+	"github.com/crazyunix/topsdk"
+	"github.com/crazyunix/topsdk/ability3261/request"
+	"github.com/crazyunix/topsdk/ability3261/response"
+	util "github.com/crazyunix/topsdk/util"
 )
 
 type Ability3261 struct {

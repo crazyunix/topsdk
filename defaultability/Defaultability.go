@@ -3,10 +3,11 @@ package defaultability
 import (
 	"errors"
 	"log"
-	"topsdk"
-	"topsdk/defaultability/request"
-	"topsdk/defaultability/response"
-	"topsdk/util"
+
+	"github.com/crazyunix/topsdk"
+	"github.com/crazyunix/topsdk/defaultability/request"
+	"github.com/crazyunix/topsdk/defaultability/response"
+	util "github.com/crazyunix/topsdk/util"
 )
 
 type Defaultability struct {
@@ -15,6 +16,26 @@ type Defaultability struct {
 
 func NewDefaultability(client *topsdk.TopClient) *Defaultability {
 	return &Defaultability{client}
+}
+
+/*
+淘宝客-推广者-万能转链
+*/
+func (ability *Defaultability) TaobaoTbkDgGeneralLinkConvert(req *request.TaobaoTbkDgGeneralLinkConvertRequest) (*response.TaobaoTbkDgGeneralLinkConvertResponse, error) {
+	if ability.Client == nil {
+		return nil, errors.New("Defaultability topClient is nil")
+	}
+	var jsonStr, err = ability.Client.Execute("taobao.tbk.dg.general.link.convert", req.ToMap(), req.ToFileMap())
+	var respStruct = response.TaobaoTbkDgGeneralLinkConvertResponse{}
+	if err != nil {
+		log.Println("taobaoTbkDgGeneralLinkConvert error", err)
+		return &respStruct, err
+	}
+	err = util.HandleJsonResponse(jsonStr, &respStruct)
+	if respStruct.Body == "" || len(respStruct.Body) == 0 {
+		respStruct.Body = jsonStr
+	}
+	return &respStruct, err
 }
 
 /*

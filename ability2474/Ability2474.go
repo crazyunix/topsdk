@@ -3,10 +3,12 @@ package ability2474
 import (
 	"errors"
 	"log"
-	"topsdk"
-	"topsdk/ability2474/request"
-	"topsdk/ability2474/response"
-	"topsdk/util"
+
+	"github.com/crazyunix/topsdk"
+
+	"github.com/crazyunix/topsdk/ability2474/request"
+	"github.com/crazyunix/topsdk/ability2474/response"
+	util "github.com/crazyunix/topsdk/util"
 )
 
 type Ability2474 struct {

@@ -1,7 +1,7 @@
 package response
 
 import (
-	"topsdk/ability376/domain"
+	"github.com/crazyunix/topsdk/ability376/domain"
 )
 
 type TaobaoTbkSpreadGetResponse struct {

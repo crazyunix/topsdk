@@ -40,6 +40,10 @@ type TaobaoTbkDgMaterialOptionalUpgradePromotionInfoMapData struct {
 	/*
 	   标签信息列表     */
 	PromotionTagList *[]TaobaoTbkDgMaterialOptionalUpgradePromotionTagMapData `json:"promotion_tag_list,omitempty" `
+
+	/*
+	   国家补贴     */
+	GovSubsidy *TaobaoTbkDgMaterialOptionalUpgradeGovSubsidyDTO `json:"gov_subsidy,omitempty" `
 }
 
 func (s *TaobaoTbkDgMaterialOptionalUpgradePromotionInfoMapData) SetPredictRoundingUpPrice(v string) *TaobaoTbkDgMaterialOptionalUpgradePromotionInfoMapData {
@@ -80,5 +84,9 @@ func (s *TaobaoTbkDgMaterialOptionalUpgradePromotionInfoMapData) SetFutureActivi
 }
 func (s *TaobaoTbkDgMaterialOptionalUpgradePromotionInfoMapData) SetPromotionTagList(v []TaobaoTbkDgMaterialOptionalUpgradePromotionTagMapData) *TaobaoTbkDgMaterialOptionalUpgradePromotionInfoMapData {
 	s.PromotionTagList = &v
+	return s
+}
+func (s *TaobaoTbkDgMaterialOptionalUpgradePromotionInfoMapData) SetGovSubsidy(v TaobaoTbkDgMaterialOptionalUpgradeGovSubsidyDTO) *TaobaoTbkDgMaterialOptionalUpgradePromotionInfoMapData {
+	s.GovSubsidy = &v
 	return s
 }

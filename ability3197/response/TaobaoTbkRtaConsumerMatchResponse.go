@@ -1,7 +1,7 @@
 package response
 
 import (
-	"topsdk/ability3197/domain"
+	"github.com/crazyunix/topsdk/ability3197/domain"
 )
 
 type TaobaoTbkRtaConsumerMatchResponse struct {
