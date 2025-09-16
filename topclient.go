@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	util "github.com/crazyunix/topsdk/util"
+	"github.com/crazyunix/topsdk/util"
 )
 
 type TopClient struct {
